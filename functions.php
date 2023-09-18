@@ -47,6 +47,7 @@ if ( ! function_exists( 'twentytwentyfour_styles' ) ) :
 
 		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'twentytwentyfour-style' );
+		wp_style_add_data( 'twentytwentyfour-style', 'path', get_template_directory() . '/style.css' );
 	}
 
 endif;
